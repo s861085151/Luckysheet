@@ -1955,7 +1955,7 @@ export function genarate(value) {//万 单位格式增加！！！
     else if (isdatetime(value) && (value.toString().indexOf(".") > -1 || value.toString().indexOf(":") > -1 || value.toString().length < 16)){
         v = datenum_local(parseDate(value.toString().replace(/-/g, "/")));
 
-        if(v.toString().indexOf(".") > -1){
+        // if(v.toString().indexOf(".") > -1){
             if(value.toString().length > 18){
                 ct.fa = "yyyy-MM-dd hh:mm:ss";
             }
@@ -1965,10 +1965,10 @@ export function genarate(value) {//万 单位格式增加！！！
             else{
                 ct.fa = "yyyy-MM-dd";
             }
-        }
-        else{
-            ct.fa = "yyyy-MM-dd";
-        }
+        // }
+        // else{
+        //     ct.fa = "yyyy-MM-dd";
+        // }
         
         ct.t = "d";
         m = SSF.format(ct.fa, v);
