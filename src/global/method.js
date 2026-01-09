@@ -432,6 +432,9 @@ const method = {
         $("#" + Store.container).empty();
         $("body > .luckysheet-cols-menu").remove();
 
+        // 自动卸载 formula replace dialog
+        $("#luckysheet-search-formula, #luckysheet-search-replace").remove();
+
         $("#luckysheet-modal-dialog-mask, #luckysheetTextSizeTest, #luckysheet-icon-morebtn-div").remove();
         $("#luckysheet-input-box").parent().remove();
         $("#luckysheet-formula-help-c").remove();
